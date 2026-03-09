@@ -1,0 +1,23 @@
+{
+  "name": "lnmarkets-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for LN Markets API",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "lnmarkets-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.52.0",
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
