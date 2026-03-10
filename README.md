@@ -1,5 +1,33 @@
 # lnmarkets-mcp
 
+> [!WARNING]
+> **This repository is deprecated.** The MCP server is now built into [lnmarkets-cli](https://github.com/romainlnm/lnmarkets-cli).
+>
+> ```bash
+> # Install the new CLI with built-in MCP server
+> git clone https://github.com/romainlnm/lnmarkets-cli.git
+> cd lnmarkets-cli
+> cargo install --path .
+> ```
+>
+> Update your Claude Desktop config:
+> ```json
+> {
+>   "mcpServers": {
+>     "lnmarkets": {
+>       "command": "lnmarkets",
+>       "args": ["mcp", "-s", "all"]
+>     }
+>   }
+> }
+> ```
+
+---
+
+*The content below is kept for historical reference only.*
+
+---
+
 MCP server for [LN Markets](https://lnmarkets.com) API v3.
 
 ## Setup
